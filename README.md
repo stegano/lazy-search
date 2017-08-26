@@ -1,7 +1,7 @@
 # Lazy-search
 [![NPM version](https://img.shields.io/npm/v/lazy-search.svg)](https://www.npmjs.com/package/lazy-search)
 
-With just a little typing, you can find exactly what you want from your content!
+With just a little typing, you can find exactly what you want from your contents!
 This library is implemented with a search function similar to the directory search used in Intellij.
 
 ## Installation
