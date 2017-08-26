@@ -4,6 +4,8 @@
 With just a little typing, you can find exactly what you want from your contents!
 This library is implemented with a search function similar to the directory search used in Intellij.
 
+![](sample/sample.gif)
+
 ## Installation
 
 The easiest way to install lazy-search is with [`npm`][npm].
