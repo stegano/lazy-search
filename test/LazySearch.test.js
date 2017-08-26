@@ -61,7 +61,7 @@ describe("LazySearch", function () {
         [Source - https://en.wikipedia.org/wiki/W._B._Yeats]
         `;
       });
-      it("basic search test", function () {
+      it("Basic search test", function () {
         /**
          * The input keyword "wilboughton" finds "William Butler Yeats photographed in 1903 by Alice Boughton".
          * */
@@ -70,7 +70,14 @@ describe("LazySearch", function () {
         var expected = "William Butler Yeats photographed in 1903 by Alice Boughton";
         expect(actual[0].contents).to.equal(expected);
       });
-      it("distance test", function () {
+      it("Empty keyword test", function () {
+        var contents = "Ttttest apple eeeee";
+        var mySearchKeyword = "";
+        var expected = [];
+        var actual = lazySearch.find(contents, mySearchKeyword);
+        expect(actual).to.deep.equal(expected);
+      });
+      it("Distance test", function () {
         var searchKeyword = "From Wikipedia, the free encyclopedia";
         var actual = lazySearch.find(contents, searchKeyword);
         /**
@@ -79,12 +86,6 @@ describe("LazySearch", function () {
         var expected = 0;
         expect(actual[0].distance).to.equal(expected);
       });
-      it("asd", function() {
-        var contents = "Ttttest apple eeeee";
-        var mySearchKeyword = "aple"; // <- You probably wanted to search for "Apple" :)
-        var result = lazySearch.find(contents, mySearchKeyword); // ->
-        console.log(JSON.stringify(result));
-      })
     });
   });
 });
