@@ -101,11 +101,13 @@ LazySearch.prototype._getInformation = function _getInformation(contents, result
       }
       prevData = item;
     });
-    ret.push({
-      _rawData: data,
-      contents: _contents.slice(data[0].index, data[data.length - 1].index + 1),
-      distance: distance
-    });
+    if (data.length > 0) {
+      ret.push({
+        _rawData: data,
+        contents: _contents.slice(data[0].index, data[data.length - 1].index + 1),
+        distance: distance
+      });
+    }
   }
   ret.sort(function (a, b) {
     return a.distance - b.distance;
