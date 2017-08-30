@@ -1,8 +1,8 @@
 {
   "name": "lazy-search",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "With just a little typing, you can find exactly what you want from your contents!",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
     "lint": "node ./node_modules/.bin/eslint ./src",
     "docs": "node ./node_modules/.bin/jsdoc ./src",
