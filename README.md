@@ -1,5 +1,7 @@
 # Lazy-search
 [![NPM version](https://img.shields.io/npm/v/lazy-search.svg)](https://www.npmjs.com/package/lazy-search)
+[![GitHub issues](https://img.shields.io/github/issues-raw/stegano/lazy-search.svg)](https://github.com/stegano/lazy-search)
+[![Travis](https://img.shields.io/travis/stegano/lazy-search.svg)](https://travis-ci.org/stegano/lazy-search)
 
 With just a little typing, you can find exactly what you want from your contents!
 This library is implemented with a search function similar to the directory search used in Intellij.
